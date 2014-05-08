@@ -1,8 +1,5 @@
 #include "suma_spec.h"
 
-
-//proba, Github
-
 template <class T>
 double suma(T input, int len)
 {
