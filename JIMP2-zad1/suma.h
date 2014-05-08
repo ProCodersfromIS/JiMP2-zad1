@@ -1,6 +1,9 @@
 #include "suma_spec.h"
 
-template <class T> //definicja szablonu
+
+//proba, Github
+
+template <class T>
 double suma(T input, int len)
 {
 	double result = 0;
