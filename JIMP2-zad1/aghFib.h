@@ -1,18 +1,36 @@
+/**
+* \ file aghFib.h
+* \ author Kamil Dawidów
+* \ brief Plik zawiera deklaracje klasy aghFib
+*/
+// ------------------------------------------------------------------
+
 #ifndef AGHFIB_H
 #define AGHFIB_H
 
+// ------------------------------------------------------------------
+
+/**
+*\ class aghFib
+*\ brief klasa zwraca wartosc podanego wyrazu z ci¹gu Fibonacciego
+*/
 class aghFib
 {
 public:
-	//konstruktor bezparametrowy
+	//Konstruktor domyslny klasy
 	aghFib();
-	//destruktor
+	
+	//Destruktor klasy
 	~aghFib();
-	//funkcja zwraca wartoœæ podanego wyrazu ci¹gu
+	
+	//metoda get
+	//
 	int get(int);
-	//prze³adowanie operatora [], wywo³uje funkcjê get
+	
+	/// \brief prze³adowanie operatora []
+	/// wywo³uje funkcjê get
 	int operator[](int);
 };
-
+// -------------------------------------------------------------------
 #endif
 
