@@ -1,16 +1,21 @@
 /*
 * \file suma.h
 * \author Beata Gie³baga
+* \date 8.04.2014
 * \brief Suma.h zawiera definicje oraz cia³o szablonu funkcji
 */
 
 #include "suma_spec.h"
 
-//deklaracja szablonu
+/// \template class T
+/// \brief szablon oblicz sume wartosci z tablicy i j¹ zwraca
 template <class T>
 
-//funkcja suma przyjmuje argumenty: parametryczny input, dzieki ktoremu odnosimy siê do sk³adników sumy
-//oraz len typu int, który okresla dlugosc tablicy(ilosc skladnikow) 
+/// \brief funkcja suma oblicza sume wartosci znajdujacych sie w tablicy input
+
+/// \param input - argument parametryczny umo¿liwia odniesienie sie do poszczegolnych skladnikow sumy
+/// \param len - okresla dlugosc tablicy(ilosc skladnikow)
+/// \return result - sume wartosci z input
 double suma(T input, int len)
 {
 	double result = 0;
@@ -20,11 +25,11 @@ double suma(T input, int len)
 	{
 		result += input[i];
 		cout << input[i];
-		if (i < len - 1) //instrukcja warunkowa umo¿liwiajaca wyswietlenie sumy w postaci a + b +... = suma
+		if (i < len - 1) 
 			cout << " + ";
 		else 
 			cout << " = " << result << endl;
 	}
 		
-	return result; //funkcja zwraca zmienna result która jest sum¹ wszystkich sk³adników input
+	return result;
 }
